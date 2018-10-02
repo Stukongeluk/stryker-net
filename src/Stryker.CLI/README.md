@@ -72,6 +72,6 @@ If you want to integrate these settings in your existing settings json, make sur
 #### Custom thresholds
 If you want to decide on your own mutation score thresholds, you can configure this with extra parameters.
 
-`dotnet stryker --threshold-break=50 --threshold-low=75 --threshold-high=90`
+`dotnet stryker --threshold-break 50 --threshold-low 75 --threshold-high 90`
 
 The defaults are respectivly: `60` `70` `80`
