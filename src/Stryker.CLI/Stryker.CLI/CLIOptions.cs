@@ -52,6 +52,33 @@
             ArgumentShortName = "-p <projectName>",
             ArgumentDescription = @"Used for matching the project references when finding the project to mutate. Example: ""ExampleProject.csproj""",
             JsonKey = "projectName"
-        };        
+        };
+
+        public static readonly CLIOption<int> ThresholdBreak = new CLIOption<int>
+        {
+            ArgumentName = "--threshold-break",
+            ArgumentShortName = "-tb <threshold>",
+            ArgumentDescription = "Set the minimum mutation score threshold. Anything below this score will return a non-zero exit code. | 60 (default)",
+            DefaultValue = 60,
+            JsonKey = "thresholdBreak"
+        };      
+
+        public static readonly CLIOption<int> ThresholdLow = new CLIOption<int>
+        {
+            ArgumentName = "--threshold-low",
+            ArgumentShortName = "-tl <threshold",
+            ArgumentDescription = "Set the lower bound of the mutation score threshold. It will not fail the test. | 70 (default)",
+            DefaultValue = 70,
+            JsonKey = "thresholdLow"
+        };    
+        
+        public static readonly CLIOption<int> ThresholdHigh = new CLIOption<int>
+        {
+            ArgumentName = "--threshold-high",
+            ArgumentShortName = "-th <threshold",
+            ArgumentDescription = "Set the prefered mutation score threshold. | 80 (default)",
+            DefaultValue = 80,
+            JsonKey = "thresholdHigh"
+        };                    
     }
 }
