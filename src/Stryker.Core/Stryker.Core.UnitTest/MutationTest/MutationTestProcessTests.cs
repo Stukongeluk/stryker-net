@@ -103,7 +103,7 @@ namespace Stryker.Core.UnitTest.MutationTest
                     Success = true
                 });
 
-            var options = new StrykerOptions("c:/test", "Console", "", 2000, null, false);
+            var options = new StrykerOptions("c:/test", "Console", "", 2000, null, false, 60, 70, 80);
 
             var target = new MutationTestProcess(input, 
                 reporterMock.Object,

@@ -51,6 +51,18 @@ namespace Stryker.CLI
             var projectNameParam = app.Option($"{CLIOptions.ProjectName.ArgumentName} | {CLIOptions.ProjectName.ArgumentShortName}",
                 CLIOptions.ProjectName.ArgumentDescription,
                 CommandOptionType.SingleValue);
+            
+            var thresholdBreakParam = app.Option($"{CLIOptions.ThresholdBreak.ArgumentName} | {CLIOptions.ThresholdBreak.ArgumentName}",
+                CLIOptions.ThresholdBreak.ArgumentDescription,
+                CommandOptionType.SingleValue);
+
+            var thresholdLowParam = app.Option($"{CLIOptions.ThresholdLow.ArgumentName} | {CLIOptions.ThresholdLow.ArgumentName}",
+                CLIOptions.ThresholdLow.ArgumentDescription,
+                CommandOptionType.SingleValue);
+
+            var thresholdHighParam = app.Option($"{CLIOptions.ThresholdHigh.ArgumentName} | {CLIOptions.ThresholdHigh.ArgumentName}",
+                CLIOptions.ThresholdHigh.ArgumentDescription,
+                CommandOptionType.SingleValue);
 
             app.HelpOption("--help | -h | -?");
 
@@ -63,7 +75,10 @@ namespace Stryker.CLI
                     timeoutParam,
                     logConsoleParam,
                     fileLogParam,
-                    configFilePathParam);
+                    configFilePathParam,
+                    thresholdBreakParam,
+                    thresholdLowParam,
+                    thresholdHighParam);
 
                 return RunStryker(options);
             });
