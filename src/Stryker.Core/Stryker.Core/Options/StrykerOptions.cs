@@ -79,7 +79,10 @@ namespace Stryker.Core.Options
                }
             }
 
-            if (thresholdList[0] >= thresholdList[1] || thresholdList[1] >= thresholdList[2] || thresholdList[0] >= thresholdList[2]) {
+            if (thresholdList[0] >= thresholdList[1] || 
+                thresholdList[1] >= thresholdList[2] || 
+                thresholdList[0] >= thresholdList[2]) 
+            {
                 throw new ValidationException("Check if the --threshold-break is the lowest value and --threshold-low value is lower than --threshold-high");
             }
 

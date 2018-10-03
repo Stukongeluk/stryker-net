@@ -52,15 +52,15 @@ namespace Stryker.CLI
                 CLIOptions.ProjectName.ArgumentDescription,
                 CommandOptionType.SingleValue);
             
-            var thresholdBreakParam = app.Option($"{CLIOptions.ThresholdBreak.ArgumentName} | {CLIOptions.ThresholdBreak.ArgumentName}",
+            var thresholdBreakParam = app.Option($"{CLIOptions.ThresholdBreak.ArgumentName} | {CLIOptions.ThresholdBreak.ArgumentShortName}",
                 CLIOptions.ThresholdBreak.ArgumentDescription,
                 CommandOptionType.SingleValue);
 
-            var thresholdLowParam = app.Option($"{CLIOptions.ThresholdLow.ArgumentName} | {CLIOptions.ThresholdLow.ArgumentName}",
+            var thresholdLowParam = app.Option($"{CLIOptions.ThresholdLow.ArgumentName} | {CLIOptions.ThresholdLow.ArgumentShortName}",
                 CLIOptions.ThresholdLow.ArgumentDescription,
                 CommandOptionType.SingleValue);
 
-            var thresholdHighParam = app.Option($"{CLIOptions.ThresholdHigh.ArgumentName} | {CLIOptions.ThresholdHigh.ArgumentName}",
+            var thresholdHighParam = app.Option($"{CLIOptions.ThresholdHigh.ArgumentName} | {CLIOptions.ThresholdHigh.ArgumentShortName}",
                 CLIOptions.ThresholdHigh.ArgumentDescription,
                 CommandOptionType.SingleValue);
 

@@ -4,6 +4,9 @@
     "logLevel": "trace",
     "timeoutMS": 9999,
     "logFile": true,
-    "projectName": "ExampleProject.csproj"
+    "projectName": "ExampleProject.csproj",
+    "thresholdBreak": 20,
+    "thresholdLow": 30,
+    "thresholdHigh": 40
   }
 }

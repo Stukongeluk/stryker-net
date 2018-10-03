@@ -57,7 +57,7 @@
         public static readonly CLIOption<int> ThresholdBreak = new CLIOption<int>
         {
             ArgumentName = "--threshold-break",
-            ArgumentShortName = "-tb <threshold>",
+            ArgumentShortName = "-tb <thresholdBreak>",
             ArgumentDescription = "Set the minimum mutation score threshold. Anything below this score will return a non-zero exit code. | 60 (default)",
             DefaultValue = 60,
             JsonKey = "thresholdBreak"
@@ -66,7 +66,7 @@
         public static readonly CLIOption<int> ThresholdLow = new CLIOption<int>
         {
             ArgumentName = "--threshold-low",
-            ArgumentShortName = "-tl <threshold",
+            ArgumentShortName = "-tl <thresholdLow>",
             ArgumentDescription = "Set the lower bound of the mutation score threshold. It will not fail the test. | 70 (default)",
             DefaultValue = 70,
             JsonKey = "thresholdLow"
@@ -75,7 +75,7 @@
         public static readonly CLIOption<int> ThresholdHigh = new CLIOption<int>
         {
             ArgumentName = "--threshold-high",
-            ArgumentShortName = "-th <threshold",
+            ArgumentShortName = "-th <thresholdHigh>",
             ArgumentDescription = "Set the prefered mutation score threshold. | 80 (default)",
             DefaultValue = 80,
             JsonKey = "thresholdHigh"
